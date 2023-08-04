@@ -1,0 +1,23 @@
+name: Deploy web app to Static Web Apps
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build_and_deploy_job:
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v2
+      - name: build main-app
+        run: cd examples/main-app && yarn && yarn build && cd ../..
+      - name: build grandson-app
+        run: cd examples/grandson-app && yarn && yarn build && cd ../..
+      - name: build sub-app
+        run: cd examples/sub-app && yarn && yarn build && cd ../..
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: examples/dist
