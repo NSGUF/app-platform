@@ -2,6 +2,7 @@ import { createVuePlugin } from 'vite-plugin-vue2'
 const path = require('path');
 
 export default {
+    base: './',
     build: {
         outDir: '../dist'
     },
