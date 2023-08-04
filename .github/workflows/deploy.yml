@@ -7,6 +7,8 @@ on:
 jobs:
   build_and_deploy_job:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
