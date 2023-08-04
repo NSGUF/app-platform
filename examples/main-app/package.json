@@ -1,0 +1,30 @@
+{
+  "name": "vite-vue2",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "request-promise": "^4.2.6",
+    "vite": "^2.9.7"
+  },
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "js-base64": "2",
+    "jsprim": "^2.0.2",
+    "request": "^2.88.2",
+    "sass": "^1.51.0",
+    "sshpk": "^1.17.0",
+    "typescript": "^5.1.6",
+    "vite-plugin-vue2": "^2.0.0",
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.3",
+    "vue-template-compiler": "^2.6.14",
+    "vuex": "^3.5.1"
+  }
+}

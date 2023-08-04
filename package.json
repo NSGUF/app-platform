@@ -1,0 +1,45 @@
+{
+    "name": "app-platform",
+    "version": "1.2.6",
+    "type": "module",
+    "description": "iframe嵌套的业务逻辑",
+    "main": "dist/static/js/platform.js",
+    "typings": "./types/index.d.ts",
+    "scripts": {
+        "build": "rollup -c --sourcemap",
+        "lint": "eslint ./src/",
+        "fix": "eslint --ext .js,.vue --fix src"
+    },
+    "keywords": [
+        "iframe"
+    ],
+    "author": "nsguf",
+    "license": "ISC",
+    "files": [
+        "dist",
+        "src",
+        "types"
+    ],
+    "bugs": "https://github.com/NSGUF/app-platform/issues",
+    "devDependencies": {
+        "@babel/core": "^7.22.9",
+        "@babel/preset-env": "^7.22.9",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@vue/compiler-sfc": "^3.3.4",
+        "eslint": "^8.0.1",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-vue": "^9.15.1",
+        "rollup": "^3.26.3",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-uglify": "^6.0.4",
+        "rollup-plugin-vue": "5.x",
+        "standard-version": "^9.5.0",
+        "vue-template-compiler": "^2.7.14"
+    },
+    "dependencies": {
+        "js-base64": "^3.7.5"
+    }
+}

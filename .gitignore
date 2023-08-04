@@ -1,0 +1,8 @@
+/node_modules/
+.idea
+.vscode
+dist
+bash.exe.stackdump
+source/FETCH_HEAD
+source/bash.exe.stackdump.gitignore
+/examples/dist
