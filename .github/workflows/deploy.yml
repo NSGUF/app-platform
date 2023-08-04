@@ -10,6 +10,8 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
+      - name: build
+        run: yarn && yarn build
       - name: build main-app
         run: cd examples/main-app && yarn && yarn build && cd ../..
       - name: build grandson-app
