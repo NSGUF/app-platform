@@ -6,7 +6,7 @@ export default {
     build: {
         outDir: '../dist/sonapp'
     },
-    base: '/sonapp/',
+    base: './sonapp/',
     resolve: {
         // 添加 '.js'、'.ts' 和 '.vue' 扩展名
         extensions: ['.js', '.ts', '.vue']
